@@ -10,6 +10,11 @@ __cache__ = {}
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
 
+'''
+import os
+externalIp = os.popen("ipconfig").read().split(":")[15][1:14]
+'''
+
 while (1):
     req = Request("http://httpbin.org/ip")
     try:
