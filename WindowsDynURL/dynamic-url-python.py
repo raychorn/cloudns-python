@@ -17,8 +17,6 @@ externalIp = os.popen("ipconfig").read().split(":")[15][1:14]
 DYNAMIC_DNS_URLS = []
 
 DYNAMIC_DNS_URLS.append('https://ipv4.cloudns.net/api/dynamicURL/?q=MzM1MTk3OToyMzkyMTM0MDE6ZjY3MjQ4NmFlYjBjZTE5YTM5YWI3MTYzYjZlN2QxMDk1Yzg4ZmJjOTM1NzA4ZDQxZjExOTViM2ZkMTc4ZTFjYw')
-DYNAMIC_DNS_URLS.append('https://ipv4.cloudns.net/api/dynamicURL/?q=MzM1MTk3OToyMzkyMzYyNDc6NGUyNWNlNDllOGI4YzAxZDYxMjM4M2JhYmRmMzc5MDcwZmJlY2IwYzhmZTZjZjFiODliM2FjZDMxYTIzMDAyNA')
-DYNAMIC_DNS_URLS.append('https://ipv4.cloudns.net/api/dynamicURL/?q=MzM1MTk3OToyMzYzMjgzNDI6ZWQwMGM2N2NmYWMyNWE5MzU5ZDI3MGRjODA5OTcwZTk4OTI5YTQwZjhkZWU5YmZiN2IxMWE5OGY0ZjIwMTBmNw')
 
 req = Request("http://httpbin.org/ip")
 try:
