@@ -121,21 +121,7 @@ done
 #echo "(1) ${ARRAY[@]}"
 #echo "(2) ${ARRAY2[@]}"
 
-PS3="Choose: "
-
-select option in "${ARRAY2[@]}";
-do
-    echo "Selected number: $REPLY"
-    choice=${ARRAY[$REPLY-1]}
-    break
-done
-
-if [[ -f $choice ]]; then
-    echo "18. Found $choice"
-else
-    echo "19. $choice not found"
-    exit 1
-fi
+choice=$(which python3.9)
 version=$($choice --version)
 echo "Use this -> $choice --> $version"
 
